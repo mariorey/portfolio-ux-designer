@@ -165,7 +165,6 @@
     top: 7rem;
     right: 3rem;
     width: min(220px, 20vw);
-    aspect-ratio: 3/4;
     background: var(--mid);
     display: flex;
     flex-direction: column;
@@ -346,7 +345,6 @@
 
   .img-placeholder {
     width: 100%;
-    aspect-ratio: 4/3;
     background: var(--mid);
     border-radius: 4px;
   }
@@ -476,11 +474,13 @@
       gap: 1rem;
       padding: 1.2rem 1.5rem;
     }
-
+    footer {
+      padding: 2rem 1.5rem; /* Reducimos el margen lateral para que respire */
+    }
     .nav-center { display: none; }
     .nav-right { grid-column: 2; grid-row: 1; }
 
-    .hero { padding: 0 1.5rem 5rem; }
+    .hero { padding: 0 1.5rem 5rem; justify-content: center; }
 
     .photo-block { width: 110px; top: 5.5rem; right: 1.5rem; }
     .deco { display: none; }
@@ -505,11 +505,11 @@
   <ul class="nav-center">
     <li><a href="./about-me.html">About Me</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="mailto:lalaburjack@gmail.com">Contact</a></li>
   </ul>
 
   <div class="nav-right">
-    <a href="TU-URL-LINKEDIN" target="_blank">
+    <a href="https://www.linkedin.com/in/anaburjack-designerux-ui/" target="_blank">
       <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6.08605 3.11249C6.08564 3.93757 5.76465 4.72868 5.19369 5.3118C4.62273 5.89493 3.84856 6.22229 3.0415 6.22188C2.23444 6.22146 1.4606 5.89331 0.890205 5.3096C0.319813 4.7259 -0.000403149 3.93446 3.80928e-07 3.10938C0.000403911 2.28431 0.321394 1.4932 0.892357 0.910073C1.46332 0.326951 2.23748 -0.000412147 3.04454 3.8943e-07C3.8516 0.000412925 4.62545 0.328567 5.19584 0.912273C5.76623 1.49598 6.08645 2.28742 6.08605 3.11249ZM6.17734 8.52553H0.091291V28H6.17734V8.52553ZM15.7933 8.52553H9.73767V28H15.7324V17.7806C15.7324 12.0876 22.99 11.5587 22.99 17.7806V28H29V15.6651C29 6.06789 18.2581 6.42564 15.7324 11.1387L15.7933 8.52553Z" fill="black"/>
       </svg>
@@ -558,7 +558,7 @@
       that connect strategy, aesthetics and usability.
     </p>
 
-    <a class="hero-cta" href="#">
+    <a class="hero-cta" href="./index.html#projects">
       <span class="cta-text">View Projects</span>
     </a>
   </div>
@@ -573,7 +573,7 @@
 
 <div id="projects" class="project-row">
   <div class="project-img">
-    <div class="img-placeholder"></div>
+    <img src="./files/tedeache/cover.png" class="img-placeholder" alt="Tedeache">
   </div>
   <div class="project-info">
     <div class="project-info-wrapper">
@@ -587,36 +587,36 @@
 
 <div class="project-row reverse">
   <div class="project-img">
-    <div class="img-placeholder"></div>
+    <img src="./files/agape/COVER%20ÁGAPE.png" class="img-placeholder" alt="Tedeache">
   </div>
   <div class="project-info">
     <div class="project-info-wrapper">
     <span class="project-tag">Diseño Web</span>
-    <a href="#"><h2 class="project-title">Ágape</h2></a>
+    <a href="./agape.html"><h2 class="project-title">Ágape</h2></a>
     </div>
     <p class="project-desc">Diseño de una página web para un supermercado ficticio con funcionalidades innovadoras enfocadas en la usabilidad y la experiencia de compra online.</p>
-    <a class="project-link" href="#">Ver Case Study →</a>
+    <a class="project-link" href="./agape.html">Ver Case Study →</a>
   </div>
 </div>
 
 <div class="project-row">
   <div class="project-img">
-    <div class="img-placeholder"></div>
+    <img src="./files/mentalizt/cover-2.jpg" class="img-placeholder" alt="Tedeache">
   </div>
   <div class="project-info">
     <div class="project-info-wrapper">
       <span class="project-tag">Aplicación Móvil</span>
-      <a href="#"><h2 class="project-title">Tedeache</h2></a>
+      <a href="./mentalizt.html"><h2 class="project-title">MentaliZT</h2></a>
     </div>
-    <p class="project-desc">Aplicación orientada a mejorar la rutina de personas con TDAH, ayudándolas a organizarse, reducir la procrastinación y gestionar distracciones digitales.</p>
-    <a class="project-link" href="#">Ver Case Study →</a>
+    <p class="project-desc">Aplicación orientada a mejorar la salud mental y reducir los efectos del estrés.</p>
+    <a class="project-link" href="./mentalizt.html">Ver Case Study →</a>
   </div>
 </div>
 
 <footer>
   <div class="footer-inner">
     <p>© 2026 Ana Burjack | Get In Touch <a href="mailto:lalaburjack@gmail.com">lalaburjack@gmail.com</a></p>
-    <a href="TU-URL-LINKEDIN" target="_blank">
+    <a href="https://www.linkedin.com/in/anaburjack-designerux-ui/" target="_blank">
       <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6.08605 3.11249C6.08564 3.93757 5.76465 4.72868 5.19369 5.3118C4.62273 5.89493 3.84856 6.22229 3.0415 6.22188C2.23444 6.22146 1.4606 5.89331 0.890205 5.3096C0.319813 4.7259 -0.000403149 3.93446 3.80928e-07 3.10938C0.000403911 2.28431 0.321394 1.4932 0.892357 0.910073C1.46332 0.326951 2.23748 -0.000412147 3.04454 3.8943e-07C3.8516 0.000412925 4.62545 0.328567 5.19584 0.912273C5.76623 1.49598 6.08645 2.28742 6.08605 3.11249ZM6.17734 8.52553H0.091291V28H6.17734V8.52553ZM15.7933 8.52553H9.73767V28H15.7324V17.7806C15.7324 12.0876 22.99 11.5587 22.99 17.7806V28H29V15.6651C29 6.06789 18.2581 6.42564 15.7324 11.1387L15.7933 8.52553Z" fill="black"/>
       </svg>
